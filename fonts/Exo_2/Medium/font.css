@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Exo2.0-Medium';
+  src: url('Exo2.0-Medium.eot');
+  src: url('Exo2.0-Medium.eot?#iefix') format('embedded-opentype'),
+       url('Exo2.0-Medium.svg#Exo2.0-Medium') format('svg'),
+       url('Exo2.0-Medium.ttf') format('truetype'),
+       url('Exo2.0-Medium.woff') format('woff'),
+       url('Exo2.0-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,988 @@
+@font-face {
+    font-family: "Exo2";
+    src: url("../fonts/Exo_2/Bold/Exo2.0-Bold.eot");
+    src: url("../fonts/Exo_2/Bold/Exo2.0-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Exo_2/Bold/Exo2.0-Bold.otf") format("opentype"),
+        url("../fonts/Exo_2/Bold/Exo2.0-Bold.svg") format("svg"),
+        url("../fonts/Exo_2/Bold/Exo2.0-Bold.ttf") format("truetype"),
+        url("../fonts/Exo_2/Bold/Exo2.0-Bold.woff") format("woff"),
+        url("../fonts/Exo_2/Bold/Exo2.0-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Exo2";
+    src: url("../fonts/Exo_2/Light/Exo2.0-Light.eot");
+    src: url("../fonts/Exo_2/Light/Exo2.0-Light.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Exo_2/Light/Exo2.0-Light.otf") format("opentype"),
+        url("../fonts/Exo_2/Light/Exo2.0-Light.svg") format("svg"),
+        url("../fonts/Exo_2/Light/Exo2.0-Light.ttf") format("truetype"),
+        url("../fonts/Exo_2/Light/Exo2.0-Light.woff") format("woff"),
+        url("../fonts/Exo_2/Light/Exo2.0-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Exo2";
+    src: url("../fonts/Exo_2/LightItalic/Exo2.0-LightItalic.eot");
+    src: url("../fonts/Exo_2/LightItalic/Exo2.0-LightItalic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Exo_2/LightItalic/Exo2.0-LightItalic.otf") format("opentype"),
+        url("../fonts/Exo_2/LightItalic/Exo2.0-LightItalic.svg") format("svg"),
+        url("../fonts/Exo_2/LightItalic/Exo2.0-LightItalic.ttf") format("truetype"),
+        url("../fonts/Exo_2/LightItalic/Exo2.0-LightItalic.woff") format("woff"),
+        url("../fonts/Exo_2/LightItalic/Exo2.0-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Exo2";
+    src: url("../fonts/Exo_2/Medium/Exo2.0-Medium.eot");
+    src: url("../fonts/Exo_2/Medium/Exo2.0-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Exo_2/Medium/Exo2.0-Medium.otf") format("opentype"),
+        url("../fonts/Exo_2/Medium/Exo2.0-Medium.svg") format("svg"),
+        url("../fonts/Exo_2/Medium/Exo2.0-Medium.ttf") format("truetype"),
+        url("../fonts/Exo_2/Medium/Exo2.0-Medium.woff") format("woff"),
+        url("../fonts/Exo_2/Medium/Exo2.0-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Exo2";
+    src: url("../fonts/Exo_2/Regular/Exo2.0-Regular.eot");
+    src: url("../fonts/Exo_2/Regular/Exo2.0-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Exo_2/Regular/Exo2.0-Regular.otf") format("opentype"),
+        url("../fonts/Exo_2/Regular/Exo2.0-Regular.svg") format("svg"),
+        url("../fonts/Exo_2/Regular/Exo2.0-Regular.ttf") format("truetype"),
+        url("../fonts/Exo_2/Regular/Exo2.0-Regular.woff") format("woff"),
+        url("../fonts/Exo_2/Regular/Exo2.0-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Exo2";
+    src: url("../fonts/Exo_2/Thin/Exo2.0-Thin.eot");
+    src: url("../fonts/Exo_2/Thin/Exo2.0-Thin.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Exo_2/Thin/Exo2.0-Thin.otf") format("opentype"),
+        url("../fonts/Exo_2/Thin/Exo2.0-Thin.svg") format("svg"),
+        url("../fonts/Exo_2/Thin/Exo2.0-Thin.ttf") format("truetype"),
+        url("../fonts/Exo_2/Thin/Exo2.0-Thin.woff") format("woff"),
+        url("../fonts/Exo_2/Thin/Exo2.0-Thin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Russo_One";
+    src: url("../fonts/Russo_One/Russo_One.eot");
+    src: url("../fonts/Russo_One/Russo_One.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Russo_One/Russo_One.otf") format("opentype"),
+        url("../fonts/Russo_One/Russo_One.svg") format("svg"),
+        url("../fonts/Russo_One/Russo_One.ttf") format("truetype"),
+        url("../fonts/Russo_One/Russo_One.woff") format("woff"),
+        url("../fonts/Russo_One/Russo_One.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-size: 100%;
+	box-sizing: border-box;
+}
+.container {
+	max-width: 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+body {
+    font-family: "Exo2", sans-serif;
+}
+.underline_title {
+    text-align: center;
+    display: inline-block;
+    font-size: 32px;
+    font-family: "Russo_One";
+    position: relative;
+    padding-left: 43px;
+    padding-top: 20px;
+    padding-bottom: 17px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+    z-index: 2;
+}
+.underline_title::before{
+    content: "";
+    background-color: #dd6d4b;
+    width: 88px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.underline_title::after{
+    content: '';
+    height: 4px;
+    width: 66px;
+    position: absolute;
+    bottom: 10px;
+    left: 66px;
+}
+
+.btn-primary {
+    background-color: #ffee00;
+    font-size: 16px;
+    color: rgb(34, 34, 34);
+    line-height: 1;
+    letter-spacing: 0.48px;
+    border: none;
+    padding: 10px 25px;
+}
+.btn-secondary {
+    background-color: #dd6d4b;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb( 255, 255, 255 );
+    line-height: 1;
+    letter-spacing: 0.48px;
+    border: none;
+    padding: 10px 50px;
+}
+
+
+/* Header Menu */
+.header {
+    padding: 22px 0;
+}
+.header__content {
+    display: flex;
+    align-items: center;
+	justify-content: space-between;
+}
+.logo__link {
+    width: 115px;
+    height: auto;
+}
+
+.header__nav-list {
+    display: flex;
+    margin-bottom: 0;
+}
+.header__nav-link {
+    text-decoration: none;
+    color: rgb( 34, 34, 34);
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 0.822;
+    padding: 0 20px;
+}
+.header__nav-link.active {
+    color: rgb( 6, 188, 126 );
+}
+.header__nav-link:hover {
+    color: rgb( 6, 188, 126 );
+}
+.phonenumber {
+    position: relative;
+    padding-left: 30px;
+}
+.phonenumber__call {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb( 34, 34, 34);
+}
+.phonenumber:before {
+    content: "";
+    position: absolute;
+    background: url(../images/mobile.png) no-repeat center / contain;
+    width: 17px;
+    height: 27px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+
+/* Banner */
+
+.banner {
+    background: url(../images/banner.png) no-repeat center / cover;
+    background-color:  #06bc7e;
+    padding: 151px 0;
+}
+.banner__content {
+    padding: 0 15px;
+}
+.banner__inner-title {
+    font-size: 54px;
+    font-family: "Russo_One";
+    color: rgb( 255, 255, 255 );
+    margin: 0;
+}
+.banner__inner-subtitle {
+    font-size: 24px;
+    color: rgb( 34, 34, 34 );
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+}
+.banner__inner-subtitle.bold {
+    font-weight: bold;
+    font-size: 26px;
+}
+.banner__inner-cost {
+    font-size: 108px;
+    font-family: "Russo_One";
+    color: rgb( 247, 254, 45 );
+    text-transform: uppercase;
+    line-height: 0.8;
+    margin: 0;
+}
+.banner__form {
+    background-color: #dd6d4b;
+    padding: 0 27px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    text-align: center;
+    box-shadow: 3px 3px 7px 1px rgba(0, 0, 0, .2);
+}
+.banner__form_title {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb( 255, 255, 255 );
+    line-height: 1;
+    margin-bottom: 25px;
+    letter-spacing: 0.64px;
+}
+.banner__form_cell {
+    margin-bottom: 20px;
+}
+.form-control {
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    color: rgb(102, 102, 102);
+    line-height: 1.333;
+}
+.button__request {
+    margin-top: 10px;
+}
+
+/* Trust */
+
+.trust {
+    background: #06bc7e;
+    padding-top: 82px;
+    padding-bottom: 58px;
+}
+.trust__content {
+    text-align: center;
+}
+.trust__title {
+    color: rgb( 255, 255, 255 );
+}
+.trust__title::after {
+    background-color: rgb( 255, 255, 255 );
+}
+.trust__item-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb( 247, 254, 45 );
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.trust__item-text {
+    font-size: 12px;
+    color: rgb( 255, 254, 254 );
+    line-height: 1.167;
+    font-weight: 300;
+    margin: 0;
+}
+.trust__item-img {
+    height: 133px;
+    width: auto;
+    width: 100%;
+}
+
+/* How much */
+
+.how-much {
+    background-image: url(../images/how-much.jpg) no-repeat center;
+    padding: 38px 0;
+}
+.how-much__title {
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb( 255, 255, 255 );
+    margin: 0;
+    text-align: center;
+}
+.button__price {
+    text-align: center;
+    margin-top: 24px;
+}
+
+/* Review */
+
+.review {
+    padding-top: 50px;
+    padding-bottom: 60px
+}
+.review__content {
+    text-align: center;
+}
+.review__title {
+    color: rgb( 34, 34, 34 );
+}
+.review__title::after {
+    background-color: rgb( 34, 34, 34 );
+}
+.review__inner_item {
+    border: 4px solid rgb( 6, 188, 126 );
+    text-align: center;
+    padding: 15px 10px;
+}
+.review__inner_item-img {
+    max-width: 60px;
+    height: auto;
+    width: 100%;
+}
+.review__inner_item-photo {
+    position: relative;
+}
+.review__inner_item-photo::before {
+    content: '”';
+    position: absolute;
+    font-family: "Russo_One";
+    font-size: 152px;
+    color: rgba( 221, 109, 75, 0.161 );
+    left: 0;
+    top: 0;
+    line-height: 1;
+}
+.review__inner_item-photo::after {
+    content: '“';
+    position: absolute;
+    font-family: "Russo_One";
+    font-size: 152px;
+    color: rgba( 221, 109, 75, 0.161 );
+    top: 0;
+    right: 0;
+    line-height: 1;
+}
+.review__inner_item-name {
+    font-size: 14px;
+    color: rgb( 34, 34, 34 );
+    font-weight: 500;
+    margin-top: 10px;
+}
+.review__inner_item-text {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb( 34, 34, 34 );
+    line-height: 1;
+    margin: 0;
+}
+.button__sale {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Steps */
+
+.steps {
+    background-color: #06bc7e;
+    padding: 55px 0;
+}
+.steps__content {
+    text-align: center;
+}
+.steps__title {
+     color: rgb( 255, 255, 255 );
+     text-align: left;
+     margin: 0 auto;
+     margin-bottom: 50px;
+}
+.steps__title::after {
+    background-color: rgb( 255, 255, 255 );
+}
+
+.steps__item {
+    position: relative;
+    padding-right: 35px;
+}
+.steps__item-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb( 247, 254, 45 );
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+.steps__item-text {
+    font-size: 12px;
+    color: rgb( 255, 254, 254 );
+    line-height: 1.333;
+    font-weight: 300;
+    margin: 0;
+}
+.steps__item-img {
+    height: 120px;
+    width: auto;
+    width: 100%;
+}
+.steps__item::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    background: url(../images/arrow.png) no-repeat center / cover;
+    top: 45px;
+    right: 0;
+}
+.steps__item:last-child::after {
+    content: '';
+    display: none;
+}
+
+/* Cars */
+
+.cars {
+    padding: 58px 0;
+}
+.cars__content {
+    text-align: center;
+}
+.cars__title {
+     color:  rgb( 34, 34, 34 );
+     margin-bottom: 55px;
+}
+.cars__title::after {
+    background-color: rgb( 34, 34, 34 );
+}
+
+.cars__inner-img {
+    width: 100%;
+    height: auto;
+}
+.cars__inner-name {
+    font-size: 16px;
+    color: rgb( 255, 255, 255 );
+    font-weight: bold;
+    background-color: #06bc7e;
+    padding: 18px 0;
+    text-align: center;
+}
+
+/* Contacts */
+
+.contacts{
+    padding-top: 60px;
+}
+.contacts__content {
+    padding-bottom: 58px;
+    position: relative;
+}
+.contacts__content::before {
+    content: '';
+    background-image: url(../icons/contacts.svg);
+    background-repeat: no-repeat;
+    max-width: 243px;
+    height: 278px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+.contacts__title {
+    font-size: 28px;
+    color: rgb( 34, 34, 34 );
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 45px;
+}
+
+.contacts__title::after {
+    content: '';
+    max-width: 218px;
+    border-bottom: 2px solid rgb( 34, 34, 34 );
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.contacts__subtitle {
+    font-size: 28px;
+    color: rgb( 34, 34, 34 );
+    font-weight: bold;
+    text-align: center;
+}
+.contacts__subtitle-color {
+    color: #dd6d4b;
+}
+
+.contacts__phonenumber__call {
+    font-size: 28px;
+    color: rgb( 6, 188, 126 );
+    line-height: 1.286;
+    text-align: center;
+    display: block;
+}
+.button__callback{
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Footer */
+
+.footer__content {
+    background-color: #06bc7e;
+    padding: 45px 0;
+}
+.footer__logo__link {
+    width: 165px;
+    height: auto;
+}
+.footer__logo {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.footer__logo::after {
+    content: '';
+    width: 50%;
+    border-bottom: 2px solid white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.footer__logo-info {
+    font-weight: 100;
+    font-size: 12px;
+    color: rgb( 255, 255, 255 );
+    line-height: 1.333;
+    margin: 0;
+    max-width: 230px;
+}
+
+.footer__title {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    font-size: 16px;
+    color: rgb( 255, 255, 255 );
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.footer__title::after {
+    content: '';
+    width: 50%;
+    border-bottom: 2px solid white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer__nav-link {
+    font-size: 14px;
+    color: rgb( 255, 255, 255 );
+    line-height: 1.286;
+}
+.footer__nav-link:hover {
+    color: #ffee00;
+    text-decoration: none;
+}
+
+
+.footer__phonenumber_call {
+    display: block;
+}
+
+.footer__phonenumber {
+    position: relative;
+    padding-right: 33px;
+    text-align: right;
+    margin-bottom: 35px;
+}
+.footer__phonenumber::after {
+    content: "";
+    position: absolute;
+    background: url(../images/footer__mobile.png) no-repeat center / contain;
+    width: 18px;
+    height: 30px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.footer__adress {
+    position: relative;
+    padding-right: 33px;
+    text-align: right;
+}
+.footer__adress:after {
+    content: "";
+    position: absolute;
+    background: url(../images/footer__map.png) no-repeat center / contain;
+    width: 18px;
+    height: 28px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.footer__copyright {
+    background: #dd6d4b;
+}
+.copyright {
+    font-size: 16px;
+    color: rgb( 255, 255, 255 );
+    text-align: center;
+    padding: 13px 0;
+    margin: 0;
+}
+
+
+/* MEDIA */
+
+@media screen and (max-width: 1010px) {
+.cars__inner-name {
+    font-size: 14px;
+}
+}
+@media screen and (max-width: 992px) {
+    .header__content {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+
+    }
+    .header__nav-list {
+        justify-content: center;
+    }
+    .header__nav-link {
+        padding: 0 8px;
+        font-size: 12px;
+    }
+    .phonenumber {
+        margin: 0 auto;
+        margin-top: 10px;
+        display: inline-block;
+
+    }
+    .phonenumber__call {
+        font-size: 12px;
+    }
+
+    .banner {
+        padding: 40px 0;
+    }
+    .banner__content {
+        align-items: center;
+    }
+    .banner__inner-title {
+        font-size: 34px
+    }
+    .banner__inner-subtitle {
+        font-size: 18px;
+    }
+    .banner__inner-subtitle.bold {
+        font-size: 18px;
+    }
+    .banner__inner-cost {
+        font-size: 70px;
+    }
+    .banner__inner {
+        text-align: center;
+    }
+
+    .trust {
+        padding: 20px 0;
+    }
+    .trust__title {
+        max-width: fit-content;
+        margin-bottom: 15px;
+    }
+    .underline_title {
+        font-size: 24px;
+    }
+
+    .review {
+        padding: 20px 0;
+    }
+    .review__title {
+        max-width: fit-content;
+        margin-bottom: 15px;
+    }
+    .button__sale {
+        margin-top: 15px;
+    }
+    .review__inner_item-name {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .steps {
+        padding: 20px 0;
+    }
+    .steps__content {
+        padding: 0 20px;
+    }
+    .steps__title {
+        max-width: fit-content;
+        margin-bottom: 20px;
+    }
+    .steps__title.underline_title::before {
+        height: 90px;
+    }
+    .steps__item {
+        flex-basis: 250px;
+        margin-bottom: 12px;
+    }
+    .steps__item::after {
+        display: none;
+    }
+    .steps__item-title {
+        margin-top: 5px;
+        margin-bottom: 3px;
+    }
+
+    .cars {
+        padding: 20px 0;
+    }
+    .cars__title {
+        max-width: fit-content;
+        margin-bottom: 15px;
+    }
+    .cars__inner-name {
+        font-size: 12px;
+        padding: 7px 0;
+        margin: 0;
+    }
+
+    .contacts {
+        padding-top: 20px;
+    }
+    .contacts__title {
+        margin-bottom: 15px;
+    }
+    .contacts__subtitle {
+        max-width: 370px;
+        margin: 5px auto;
+    }
+    .footer__content {
+        padding: 20px 0;
+    }
+    .copyright {
+        font-size: 12px;
+        padding: 5px 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .banner__inner {
+        margin-bottom: 15px;
+    }
+    .banner__form {
+        margin: 0 auto;
+    }
+    .trust__item {
+        margin-bottom: 15px;
+    }
+    .how-much {
+        padding: 15px 0;
+    }
+    .how-much__title {
+        font-size: 20px;
+    }
+    .review__inner_adapt {
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .underline_title {
+        font-size: 20px;
+    }
+    .review__title {
+        margin-bottom: 5px;
+    }
+    .underline_title::before{
+        display: none;
+    }
+    .underline_title::after {
+        display: none;
+    }
+    .cars__item {
+        margin-bottom: 7px;
+    }
+    .contacts__content {
+        z-index: 2;
+    }
+    .contacts__title {
+        font-size: 20px;
+    }
+    .contacts__subtitle {
+        font-size: 18px;
+        max-width: 220px;
+    }
+    .contacts__phonenumber__call {
+        font-size: 18px;
+    }
+    .btn-secondary {
+        font-size: 14px;
+        padding: 10px 40px;
+    }
+    .contacts__content {
+        padding-bottom: 20px;
+    }
+    .contacts__content::before {
+        max-width: 203px;
+        height: 233px;
+        z-index: -1;
+        opacity: 0.4;
+    }
+    .button__callback {
+        margin-top: 15px;
+    }
+    .footer__logo {
+        padding-bottom: 10px;
+        margin-bottom: 8px;
+    }
+    .footer__title {
+        padding-bottom: 10px;
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+    .footer__nav-item {
+        line-height: 0.9;
+    }
+    .footer__nav-link {
+        font-size:  12px;
+    }
+    .footer__phonenumber {
+        margin-bottom: 10px;
+    }
+    .footer__adress {
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 576px) {
+    .header__nav-list {
+        display: block;
+    }
+    .footer__content_adapt {
+        display: block;
+        text-align: center;
+    }
+    .footer__logo-info {
+        margin: 0 auto;
+    }
+    .footer__logo::after{
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        max-width: 25%;
+    }
+    .footer__title::after{
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        max-width: 25%;
+    }
+    .footer__title {
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .footer__phonenumber {
+        text-align: center;
+        padding-right: 0;
+    }
+    .footer__adress {
+        text-align: center;
+        padding-right: 0;
+    }
+    .footer__phonenumber::after {
+        display: none;
+    }
+    .footer__adress::after {
+        display: none;
+    }
+    .contacts__content::before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .underline_title {
+        font-size: 17px;
+    }
+    .trust__item-title {
+        font-size: 14px;
+    }
+    .how-much__title {
+        font-size: 18px;
+    }
+    .review__title {
+        padding-left: 0;
+    }
+
+}
+@media screen and (max-width: 371px) {
+    .cars__title.underline_title {
+        padding-left: 5px;
+    }
+    .how-much__title {
+        font-size: 16px;
+    }
+    .btn-primary {
+        font-size: 14px;
+    }
+
+}
+@media screen and (max-width: 351px) {
+    .steps__title-underline {
+        border: none;
+    }
+    .cars__title.underline_title {
+        padding-left: 5px;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+    .banner__inner-title {
+        font-size: 30px;
+    }
+    .trust__title {
+        padding: 0;
+    }
+    .trust__title-underline  {
+        border: none;
+    }
+    .underline_title::before{
+        display: none;
+    }
+    .review__title-underline {
+        border: none;
+    }
+    .review__title {
+        padding: 0;
+    }
+    .steps__title {
+        text-align: center;
+        padding: 0;
+    }
+    .cars__title {
+        padding: 0;
+    }
+    .cars__title-underline {
+        border: none;
+    }
+
+}

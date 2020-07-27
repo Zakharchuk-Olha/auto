@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Exo2.0-LightItalic';
+  src: url('Exo2.0-LightItalic.eot');
+  src: url('Exo2.0-LightItalic.eot?#iefix') format('embedded-opentype'),
+       url('Exo2.0-LightItalic.svg#Exo2.0-LightItalic') format('svg'),
+       url('Exo2.0-LightItalic.ttf') format('truetype'),
+       url('Exo2.0-LightItalic.woff') format('woff'),
+       url('Exo2.0-LightItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
